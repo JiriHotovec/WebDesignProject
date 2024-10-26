@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>HRK News</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jiří Hotovec, Jakub Kučera, Petr Raisich" />
+    <meta name="description" content="Semester project at Czech University of Life Sciences Prague (CZU)" />
+    <meta name="keywords" content="News, Semester project, HTML, CSS" />
+    <link rel="stylesheet" href="site.css" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-layout-menu">
+            <!-- <a href="home-page.html" title="Česká zemědělská univerzita v Praze">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Logo_czu_cz.png" alt="Česká zemědělská univerzita v Praze" class="logo" />
+            </a> -->
+            <nav>
+                <div id="topMenu" class="topnav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="grid-layout-header">
+            <main>
+                <header>
+                    <h2>Výzvy a Perspektivy: Aktuální Situace Studentů na České Zemědělské Univerzitě v Praze</h2>
+                </header>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p> -->
+            </main>
+        </div>
+        <div class="grid-layout-main">
+            <section>
+                <header>
+                    <h2>Nejnovější</h2>
+                </header>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h2>Nejčtenější</h2>
+                </header>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h2>Zprávy</h2>
+                </header>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </section>
+        </div>
+        <div class="grid-layout-advertisement">
+            <aside>
+                Reklama
+            </aside>
+        </div>
+        <div class="grid-layout-subscription">
+            Předplatné
+        </div>
+        <div class="grid-layout-weather">
+            <h2>Počasí</h2>
+        </div>
+        <div class="grid-layout-short-video">
+            <article>
+                <header>
+                    <h2>Krátká videa</h2>
+                </header>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </article>
+        </div>
+        <div class="grid-layout-footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function toggleMenu() {
+        var x = document.getElementById("topMenu");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
